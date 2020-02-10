@@ -1,0 +1,397 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+      /* TODO */
+    </style>
+  </head>
+
+  <body>
+    <div class="app-page" data-page="splashscreen">
+      
+      <div class="app-content">
+        <div class="app">
+            <h1>Emmanuel CV</h1>
+            <div id="deviceready" class="blink">
+                <div class="app-button" data-target="home">BEGIN</div>
+            </div>
+        </div>
+       
+      </div>
+    </div>
+
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title">Home</div>
+        <div class="app-button right" id="closeApp" data-back>Exit</div>
+      </div>
+
+      <div class="app-section">
+        <h2>About The App</h2>
+        <p>Emmanuel Cv is a user-friendly, customazied mobile apllication, 
+          to cater for the increaseing demands of his CV</p>
+      </div>
+
+      <div class="app-section">
+        <ul class="app-list">
+          <li class="app-button" data-target="personal">Meet Me</li>
+          <li class="app-button" data-target="education">My Education & Study</li>
+          <li class="app-button" data-target="gallery">My gallery</li>
+          <li class="app-button" data-target="contact">contact me</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="app-page" data-page="personal">
+      <div class="app-topbar" >
+        <div class="app-button left" data-back></div>
+        <div class="app-title">
+            Meet Me
+        </div>
+      </div>
+
+      <div class="app-section">
+          <ul class="app-list">
+            <li>Name: Asomba Emmanuel C.</li>
+            <li>DOB: March 1st</li>
+            <li>State of Origin: imo state </li>
+            <li>Home address: Jabi, Abuja </li>
+            <li>Phone number: +234 xxx xxx xx</li>
+            <li>Email Address: asomba505@gmail.com</li>
+            <li>Hobbies: Music & Reading </li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="app-page" data-page="education">
+      <div class="app-topbar" >
+        <div class="app-button left" data-back></div>
+        <div class="app-title">
+            My Education
+        </div>
+      </div>
+
+      <div class="app-section">
+        <ul class="app-list">
+            <label>Primary</label>
+            <li>ADSS Asokoro, Abuja</li>
+        </ul>
+      </div>
+
+      <div class="app-section">
+        <ul class="app-list">
+            <label>Secondary School</label>
+            <li>British Spring Hall</li>
+        </ul>
+      </div>
+
+      <div class="app-section">
+        <ul class="app-list">
+            <label>Tertiary Education</label>
+            <li>NAU University</li>
+        </ul>
+      </div>
+
+      <div class="app-section">
+        <ul class="app-list">
+            <label>Field Experience</label>
+            <li>The Visiola Foundation, Abuja</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-page" data-page="gallery">
+        <div class="app-topbar">
+          <div class="app-button left"  data-back></div>
+            <div class="app-title">
+                My Gallery
+            </div>
+        </div>
+
+        <div class="app-content">
+            <div class="app-button" onclick="view()"></div>
+        </div>
+    </div>
+
+    <div class="app-page" data-page="contact">
+      <div class="app-topbar">
+          <div class="app-button left" data-back></div>
+          <div class="app-title">
+            Find Me
+          </div>
+      </div>
+
+      <div class="app-content">
+          <div class="about-me">
+              <h1>Asomba Emmanuel</h1>
+              <h3>Engineer | Software Developer</h3>
+              <ul class="app-list">
+                <label>Follow Me</label>
+                <li class="app-button" id="instagram" 
+                onclick="openInstagram()">
+                <a href="https://www.instagram.com/asomba_c/">Instagram</a></li>
+                <li class="app-button">twitter</li>
+                <li class="app-button">Facebook</li>
+                <li class="app-button">Linkedln</li>
+                <li class="app-button">
+                  <a href="http://www.visiolafoundation.org/">Web</a></li>
+              </ul>
+          </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="app-page dark-page" data-page="gallery">
+        <div class="app-topbar">
+            <div class="left app-button" data-back ></div>
+            <div class="app-title">My Gallery</div>
+          </div>
+          <div class="app-content">
+            <div class="app-button" onclick="view()"></div>
+          </div>
+    </div>
+
+
+    <div class="app-page dark-page" data-page="viewer">
+      <div class="app-topbar">
+          <div class="left app-button" data-back ></div>
+          <div class="app-title">My viewer</div>
+        </div>
+        <div class="app-content">
+
+        </div>
+  </div>
+
+  <div class="app-page dark-page" data-page="contact">
+    <div class="app-topbar">
+        <div class="left app-button" data-back ></div>
+        <div class="app-title">Find me</div>
+      </div>
+      <div class="app-content">
+        <div class="about-me">
+          <h1>Asomba Emmanuel</h1>
+          <h3>Engineer | Software Developer</h3>
+          <ul class="app-list">
+            <label>Follow Me</label>
+            <li class="app-button" id="instagram" onclick="openInstagram()" >Instagram</li>
+            <li class="app-button">twitter</li>
+            <li class="app-button">facebook</li>
+            <li class="app-button">Linkedln</li>
+            <li class="app-button">Web</li>
+          </ul>
+      </div>
+
+     
+      
+
+      </div>
+
+     
+</div> -->
+
+    <script src="js/zepto.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/photo-viewer.js"></script>
+    <script src="js/jqery.js"></script>
+    <script>
+
+App.controller('splashscreen', function(page) {
+
+});
+
+App.controller('home', function(page) {
+  $(page)
+        .find('#closeApp')
+        .on('click', function () {
+
+		 App.dialog({
+                    title: 'Exit Application',
+                    text: 'Do you want to close this app?',
+                    okButton: 'Yes',
+                    cancelButton: 'Cancel'
+                }, function (yes, cancel) {
+                    if (yes) {
+                        // App.load('SignUp');
+                    }else{
+                      App.load('home')
+                    }
+                });
+	    
+
+        });
+
+})
+
+App.controller('personal', function(page) {
+  
+})
+
+App.controller('education', function(page) {
+  
+})
+
+App.controller('contact', function(page) {
+  
+})
+
+
+// function openInstagram() {
+//       alert('Sorry, for some reason, ppthe GET request works only on a browser or an emulator,');
+//       $.ajax({
+//           type: "GET",
+//           url: "https://www.instagram.com/asomba_c/",
+//           cache: false,
+//           success: function (data) {
+             
+//           }
+//       });
+//   }
+
+// App.controller('gallery', function(page) {  
+  
+// })
+
+var images = ['img/logo.png', 'img/logo.png', 'img/logo.png', 'img/logo.png',
+'img/logo.png','img/logo.png','img/logo.png']
+App.controller('gallery', function(page, data){
+  var photoViewer = new PhotoViewer(
+              page, 
+              data.images = ['img/logo.png', 'img/logo.png','img/logo.png','img/logo.png','img/logo.png','img/logo.png'], 
+              console.log(data.images),
+              {
+            automaticTitles: true,
+	          autoHideTitle: true,
+		      startAt: 0,
+	      });
+
+        photoViewer.on('flip', function (page) {
+		      data.index = page;
+		      App.saveStack();
+          });
+   
+
+    view = function(){
+      App.load('gallery', {images:urls});
+    }
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //     App.populator('gallery', function (page, data) {
+  //       var images = ['img/logo.png', 'img/logo.png','img/logo.png','img/logo.png','img/logo.png','img/logo.png'];
+  //       var urls = images;
+  //       // var index = data.images.index;
+  // view = function () {
+  //   console.log(urls);
+	// 					App.load('viewer', {images: urls});
+	// 				}
+
+  //     })
+      
+
+  //     App.load('gallery', {
+	//       urls: ['img/logo.png', 'img/logo.png','img/logo.png','img/logo.png','img/logo.png','img/logo.png'],
+  //       index: 1,
+  //     });
+
+  //             var images = ['img/logo.png', 'img/logo.png','img/logo.png','img/logo.png','img/logo.png','img/logo.png'];
+  //       var urls = images;
+  // view = function () {
+  //   console.log(urls);
+	// 					App.load('viewer', {images: urls});
+	// 				}
+      
+ 
+
+      try {
+        App.restore();
+      } catch (err) {
+        App.load('splashscreen', 'fade');
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Emmanuel CV</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Login</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html> -->

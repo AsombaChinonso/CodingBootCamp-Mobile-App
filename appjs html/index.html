@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/index.css"> 
+    <style>
+      /* TODO */
+    </style>
+  </head>
+
+  <body>
+  
+    <div class="app-page" data-page="splashscreen">
+        <div class="app">
+            <h1>Emmanuel cv</h1>
+            <div id="deviceready" class="blink">
+              <div class="app-button" data-target="home">begin</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title">Home</div>
+      </div>
+
+      <div class="app-section">
+        <h2>About The App</h2>
+        <p>Emmanuel Cv is a user-friendly, customized mobile application, 
+          to cater for the increaseing demands of his CV</p>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="js/zepto.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+     
+     App.controller('splashscreen', function(page) {
+
+     });
+
+     App.controller('home', function(page) {
+
+     })
+
+
+      try {
+        App.restore();
+      } catch (err) {
+        App.load('splashscreen');
+      }
+    </script>
+  </body>
+</html>
